@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GFinanceiro</string>
+    <string name="activity_title_despesa">Despesa</string>
+    <string name="activity_title_relatorio">Relatório</string>
+    <string name="txt_data">Data:</string>
+    <string name="txt_descricao">Descrição:</string>
+    <string name="txt_categoria">Categoria:</string>
+    <string name="txt_valor">Valor:</string>
+    <string name="btn_gravar">Gravar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="action_inserir">Inserir</string>
+    <string name="action_more">Mais</string>
+    <string name="action_excluir">Excluir</string>
+    <string name="action_report">Relatório</string>
+    <string name="txt_semdespesa">Nenhuma despesa cadastrada</string>
+    <string name="dialog_title_novacategoria">Nova Categoria</string>
+    <string name="btn_categoria">+</string>
+    <string name="dialog_title_delete">Excluir</string>
+    <string name="txt_filter_mes">Mês:</string>
+    <string name="txt_filter_ano">Ano:</string>
+    <string name="btn_update">Atualizar</string>
+
+
+    <string name="txt_empty_report">Não existem dados</string>
+
+
+    <string name="toast_despesa_gravada">Despesa gravada com sucesso!</string>
+
+</resources>
