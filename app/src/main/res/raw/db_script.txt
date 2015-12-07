@@ -1,0 +1,14 @@
+CREATE TABLE categoria (
+	_id				INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+	nome			TEXT NOT NULL
+);
+
+CREATE TABLE despesa (
+	_id				INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+	data			NUMERIC NOT NULL,
+	descricao		TEXT NOT NULL,
+	categoria_id	INTEGER NOT NULL,
+	valor			REAL NOT NULL,
+	
+	FOREIGN KEY(categoria_id) REFERENCES categoria(_id)
+);
