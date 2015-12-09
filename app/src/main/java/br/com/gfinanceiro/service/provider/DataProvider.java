@@ -104,10 +104,10 @@ public class DataProvider extends ContentProvider {
         int code = matcher.match(uri);
 
         if (code == CODE_DESPESA_ID || code == CODE_CATEGORIA_ID || code == CODE_RELATORIO) {
-            return null;
+            return "vnd.android.cursor.item/vnd.br.com.gfinanceiro";
 
         } else if (code == CODE_DESPESA || code == CODE_CATEGORIA) {
-            return null;
+            return "vnd.android.cursor.dir/vnd.br.com.gfinanceiro";
         }
 
         throw new IllegalArgumentException("A URI não é suportada: " + uri);
