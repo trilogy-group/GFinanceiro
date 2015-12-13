@@ -83,7 +83,6 @@ public class DespesasAdapter extends CursorAdapter implements CompoundButton.OnC
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         return inflater.inflate(R.layout.adapter_despesas, parent, false);
 
-
     }
 
 

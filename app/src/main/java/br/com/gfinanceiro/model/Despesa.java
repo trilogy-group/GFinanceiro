@@ -12,7 +12,7 @@ import br.com.gfinanceiro.service.data.DespesaContract;
 /**
  * Created by Kabom on 06/12/2015.
  */
-public class Despesa implements Serializable {
+public class Despesa implements Serializable{
 
     private Long id;
     private Date data;
@@ -103,33 +103,33 @@ public class Despesa implements Serializable {
         setValor(null);
     }
 
-    public void loadFromCursor(Cursor c){
+    public void loadFromCursor(Cursor c) {
         clear();
 
         int index = c.getColumnIndex(DespesaContract.Columns._ID);
-        if(index > -1 && c.isNull(index)){
+        if (index > -1 && c.isNull(index)) {
             setId(c.getLong(index));
         }
 
         index = c.getColumnIndex(DespesaContract.Aliases.DATA);
-        if(index > -1 && c.isNull(index)){
+        if (index > -1 && c.isNull(index)) {
             setData(new Date(c.getLong(index)));
         }
 
         index = c.getColumnIndex(DespesaContract.Aliases.DESCRICAO);
-        if(index > -1 && c.isNull(index)){
+        if (index > -1 && c.isNull(index)) {
             setDescricao(c.getString(index));
         }
 
         index = c.getColumnIndex(DespesaContract.Aliases.VALOR);
-        if(index > -1 && c.isNull(index)){
+        if (index > -1 && c.isNull(index)) {
             setValor(c.getDouble(index));
 
         }
 
         index = c.getColumnIndex(CategoriaContract.Aliases._ID);
-        if(index > -1 && c.isNull(index)){
-            if(categoria == null){
+        if (index > -1 && c.isNull(index)) {
+            if (categoria == null) {
                 categoria = new Categoria();
             }
 
@@ -137,14 +137,13 @@ public class Despesa implements Serializable {
         }
 
         index = c.getColumnIndex(CategoriaContract.Aliases.NOME);
-        if(index > -1 && c.isNull(index)){
-            if(categoria == null){
+        if (index > -1 && c.isNull(index)) {
+            if (categoria == null) {
                 categoria = new Categoria();
             }
 
             categoria.setNome(c.getString(index));
         }
-
 
 
     }

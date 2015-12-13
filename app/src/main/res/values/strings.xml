@@ -25,5 +25,6 @@
 
 
     <string name="toast_despesa_gravada">Despesa gravada com sucesso!</string>
+    <string name="title_activity_lista_valores">ListaValores</string>
 
 </resources>

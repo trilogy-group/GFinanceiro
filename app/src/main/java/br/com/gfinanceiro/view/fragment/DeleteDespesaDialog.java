@@ -17,7 +17,7 @@ public class DeleteDespesaDialog extends DialogFragment implements DialogInterfa
     private OnDeleteDespesaListener listener;
 
 
-    public DeleteDespesaDialog newInstance(OnDeleteDespesaListener listener) {
+    public static DeleteDespesaDialog newInstance(long[] ids, OnDeleteDespesaListener listener) {
         DeleteDespesaDialog dialog = new DeleteDespesaDialog();
         dialog.ids = ids;
         dialog.listener = listener;

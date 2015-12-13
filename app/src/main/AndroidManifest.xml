@@ -8,12 +8,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <provider
             android:name=".service.provider.DataProvider"
             android:authorities="br.com.gfinanceiro.provider.DataProvider"
             android:enabled="true"
-            android:exported="false"></provider>
+            android:exported="false" />
+
     </application>
 
 </manifest>
